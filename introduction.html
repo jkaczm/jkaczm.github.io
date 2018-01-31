@@ -35,12 +35,48 @@
         <h3>You can use this account in two places: </h3>
         <ul>
             <li>Computers in the computer lab</li>
-            <li>Venus server (<em>Venus.cs.qc.cuny.edu</em>)</li>
+            <li>Venus server (<em>venus.cs.qc.cuny.edu</em>)</li>
         </ul>
         <h3>Venus</h3>
         <p>Venus is the name of one of Queens College server where you can upload your files. 
             Since this is an introduction class, we will access and use Venus only on the first few weeks. 
             However, Venus server will be used extensively in higher level classes, make sure you know how to access and use it.</p>
+        
+        <h1>Setup Instructions</h1>
+        <h3>Windows</h3>
+        <p><strong>Login onto Venus</strong></p>
+        <ol>
+            <li>Download and install <a href="http://venus.cs.qc.cuny.edu/~csakai/assets/etc/cs_111/SSHSecureShellClient.exe">SSH</a></li>
+            <li>Click Quick Connect</li>
+            <li>In the field <em>Host Name</em> enter <mark>venus.cs.qc.cuny.edu</mark></li>
+            <li>In the field <em>User Name</em> enter your username as described above</li>
+            <li>Click Connect.  You will then be prompted to enter your password, which is your CUNYFirst ID</li>
+        </ol>
+        <p>On a Mac, you can use the same Unix commands locally.  You don't need to connect to Venus.  The terminal is where you can enter these commands.  
+            The terminal is located in your Applications/Utilities folder.  If this is your first time opening the terminal, you will get a pop-up asking 
+            to install Command Line Developer Tools.  Click on <strong>Install</strong>.  No need to click on <strong>Get Xcode</strong> because you do not need it for this class.</p>
+        <p>However, if you want to access Venus from your Mac, enter the command <mark>ssh username@venus.cs.qc.cuny.edu</mark> on the terminal, where 
+        username is the username as described above.  You will then be prompted to enter your password.</p>
+
+        <h1>Unix Commands</h1>
+        <h3>First, some definitions</h3>
+        <p><strong>Directory</strong> - If you are familiar with the concept of a <em>folder</em> in Windows or Mac, this is just another term for <em>folder</em>.</p>
+        <p>When you fist log on to Venus, you will be located at the <strong>root directory</strong>, which is the folder at the highest 
+        level in the heirarchy</p>
+        <h3>Navigating the directory structure</h3>
+        <p><strong>ls</strong> lists all the files and folders in your current directory</p>
+        <p><strong>cd ______</strong> changes the current directory to the directory specified by ______</p>
+        <p><strong>cd ~</strong> changes directory to the home or root directory</p>
+        <p><strong>mkdir ______</strong> creates a directory with the name ______</p>
+        <p><strong>rmdir ______</strong> removes the directory with the name ______</p>
+        <p><strong>pwd</strong> prints the full pathname of the current directory</p>
+        <p><strong>touch ______</strong> creates an empty file with the name ______</p>
+        <p><strong>mv ______ ______</strong> moves or renames a file.  For example, <mark>mv oldFile newFile</mark> renames oldFile newFile.</p>
+        <p><strong>cp ______ ______</strong> creates a copy of a file.  For example, <mark>cp file1.cpp file2.cpp</mark> creates a copy of file1.cpp called file2.cpp</p>
+        <p><strong>.</strong> represents the current directory in which you are located</p>
+        <p><strong>..</strong> represents the parent directory (the directory above the current directory)</p>
+
+        
 
         
     </div>
