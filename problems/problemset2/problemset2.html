@@ -18,7 +18,24 @@
     </div>
 
     <div class="container">
-        <p><a href="http://www.learncpp.com/cpp-tutorial/52-if-statements/">Relevant Reading</a></p>
+        <p>Relevant Reading: 
+            <ul>
+                <li><a href="http://www.learncpp.com/cpp-tutorial/35-relational-operators-comparisons/">relational operators</a></li>
+                <li><a href="http://www.learncpp.com/cpp-tutorial/36-logical-operators/">logical operators</a></li>
+                <li><a href="http://www.learncpp.com/cpp-tutorial/52-if-statements/">if-statements</a></li>
+            </ul>
+        </p>
+        <pre><code>
+        Precedence   Operator    Description                        Associativity
+        1            !           logical NOT                        right-to-left
+        2            * / %       multiplication, division, modulo   left-to-right
+        3            + -         addition, subtraction              left-to-right
+        4            < <= > >=   relational <, ≤, >, ≥              left-to-right
+        5            == !=       relational =, ≠                    left-to-right
+        6            &&          logical AND                        left-to-right
+        7            ||          logical OR                         left-to-right
+        8            =           assignment                         right-to-left
+        </code></pre>
         <ol>
             <li>Predict the output of the following program before running it: 
                 <pre><code class="language-cpp">
