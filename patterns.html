@@ -18,7 +18,175 @@
     </div>
 
     <div class="container">
+        <h2>Printing rectangles</h2>
+        <p>The following program prints a 5x5 grid of X's</p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt
+            
+            using namespace std;
+
+            int main(){
+                int numRows = 5;
+                int numCols = 5;
+
+                for(int r = 1; r < numRows; r++){
+                    for(int c = 1; c < numCols; c++){
+                        cout << "X";
+                    }
+                    cout << endl;
+                }
+
+                return 0;
+            }
+        </code></pre>
+        <p>Output:</p>
+        <pre><code class="language-bash">
+            XXXXX
+            XXXXX
+            XXXXX
+            XXXXX
+            XXXXX
+        </code></pre>
         
+        <p>The following program prints a 5x5 grid of X's and O's where X's are printed on odd numbered rows, and O's are printed on even numbered rows.</p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt
+            
+            using namespace std;
+
+            int main(){
+                int numRows = 5;
+                int numCols = 5;
+
+                for(int r = 1; r < numRows; r++){
+                    for(int c = 1; c < numCols; c++){
+                        
+                        if(r % 2 == 1){
+                            cout << "X";
+                        } else {
+                            cout << "O";
+                        }
+
+                    }
+                    cout << endl;
+                }
+                
+                return 0;
+            }
+        </code></pre>
+        <p>Output:</p>
+        <pre><code class="language-bash">
+            XXXXX
+            OOOOO
+            XXXXX
+            OOOOO
+            XXXXX
+        </code></pre>
+
+        <p>If you want to print X's on odd numbered columns and O's on even numbered columns, simply change the if-statement to <mark>if(c % 2 == 1)</mark></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt
+            
+            using namespace std;
+
+            int main(){
+                int numRows = 5;
+                int numCols = 5;
+
+                for(int r = 1; r < numRows; r++){
+                    for(int c = 1; c < numCols; c++){
+                        
+                        if(c % 2 == 1){
+                            cout << "X";
+                        } else {
+                            cout << "O";
+                        }
+
+                    }
+                    cout << endl;
+                }
+                
+                return 0;
+            }
+        </code></pre>
+        <p>Output:</p>
+        <pre><code class="language-bash">
+            XOXOX
+            XOXOX
+            XOXOX
+            XOXOX
+            XOXOX
+        </code></pre>
+
+        <p>The following program prints a diagonal of O's in a 5x5 grid of X's</p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt
+            
+            using namespace std;
+
+            int main(){
+                int numRows = 5;
+                int numCols = 5;
+
+                for(int r = 1; r < numRows; r++){
+                    for(int c = 1; c < numRols; c++){
+                        
+                        if(r == c){
+                            cout << "O";
+                        } else {
+                            cout << "X";
+                        }
+
+                    }
+                    cout << endl;
+                }
+                
+                return 0;
+            }
+        </code></pre>
+        <p>Output:</p>
+        <pre><code class="language-bash">
+            OXXXX
+            XOXXX
+            XXOXX
+            XXXOX
+            XXXXO
+        </code></pre>
+        
+        <p>The following program prints a plus sign of O's inside a 5x5 grid of X's (the middle rows and middle columns are O's)</p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt
+            
+            using namespace std;
+
+            int main(){
+                int numRows = 5;
+                int numCols = 5;
+
+                for(int r = 1; r < numRows; r++){
+                    for(int c = 1; c < numCols; c++){
+                        
+                        if(c == (numCols/2 + 1) || r == (numRows/2 + 1)){
+                            cout << "X";
+                        } else {
+                            cout << "O";
+                        }
+
+                    }
+                    cout << endl;
+                }
+                
+                return 0;
+            }
+        </code></pre>
+        <p>Output:</p>
+        <pre><code class="language-bash">
+            XXOXX
+            XXOXX
+            OOOOO
+            XXOXX
+            XXOXX
+        </code></pre>
 
         
     </div>
