@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="/css/prism.css" rel="stylesheet" />
+    <title>Assignment 3</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Assignment 3</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>For assignment 3, you will only need to write one program.  This one program, however, will include multiple functions.</p>
+        <p>The idea is to write a program in which the user guesses the result of the flip of a coin five times.  The program then prints the resulting letter grade based on the percentage of correct predictions.</p>
+        <p>To create this program, two functions must be defined: </p>       
+        <ol>
+            <li><pre><code class="language-cpp">int coinFlip()</code></pre> takes no parameters and returns <em>1</em> for heads and <em>0</em> for tails.
+            <p>the function should return <em>1</em> and <em>0</em> <strong>randomly</strong>.  See <a href="http://venus.cs.qc.edu/~ryba/Spring18/cs111/Ch4/dice.cpp">dice.cpp</a></p></li>
+            <li><pre><code class="language-cpp">char letterGrade(double percentage)</code></pre> takes as a parameter a double for the percentage of correct guesses and returns the corresponding letter grade based on the following chart:
+                <table class="table">
+                    <tr>
+                        <th>Percentage</th>
+                        <th>Letter Grade</th>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>0 or 20</td>
+                        <td>F</td>
+                    </tr>
+                </table>
+                <p>See <a href="/assignments/assignment2.html">Assignment 2</a></p>
+            </li>
+        </ol>
+        <p><strong>Sample run:</strong></p>
+        <p><pre><code class="language-bash">
+                $ Heads or Tails? 1
+                $ The coin landed on heads, correct!
+                $ Heads or Tails? 0
+                $ The coin landed on heads, incorrect!  
+                $ Heads or Tails? 0
+                $ The coin landed on tails, correct!
+                $ Heads or Tails? 1
+                $ The coin landed on tails, incorrect!
+                $ Heads or Tails? 1
+                $ The coin landed on heads, correct!
+                $ You got 60% correct, that's a D!
+            </code></pre></p>
+        <p>If you notice, the user enters the integer 1 for heads and 0 for tails when making the prediction.</p>
+        <p><strong>HINT</strong> Here is a general outline for how the code in main should be written:</p>
+        <p>
+            <ul>
+                <li>Declare variables to store the input from the user, the number of correct guesses, the number of incorrect guesses.</li>
+                <li>Use a for loop.</li>
+                <li>For each iteration of the for loop:
+                    <ul>
+                        <li>Receive the input from the user</li>
+                        <li>Call the function <em>coinFlip</em></li>
+                        <li>Compare the user's input to the result of <em>coinFlip</em>.  If they are equal, increment the number of correct guesses by 1.  If they are not equal 
+                        increment the number of incorrect guesses by 1.  (Note, those variables should be initialized to 0.)</li>
+                    </ul>
+                </li>
+                <li>Once the for loop is finished, calculate the percentage of guesses the user got correct, call the function <em>letterGrade</em> and output the result.</li>
+            </ul>
+        </p>
+        <p>Email me if you have any questions.</p>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/prism.js"></script>
+</body>
+</html>
