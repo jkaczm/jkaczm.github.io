@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS111</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" style="text-align: center">CS111</h1>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-light justify-content-center" style="background-color:#E3F2FD">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Syllabus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="assignments.html">Assignments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Notes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Other Stuff</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="padding-left:10%">
+
+        <h2>Grading Policy</h2>
+        <p>Lab counts as 20% of you total grade</p>
+        <ul>
+            <li>Quizzes count as 14%</li>
+            <li>Assignments count as 6%</li>
+        </ul>
+        <p>We will have a quiz about once every two weeks.</p>
+        <p>Your lowest quiz grade will be dropped before calculating your final grade.</p>
+
+        <h2>Venus Account</h2>
+        <p>We will be doing all of our coding in this class on Venus: a server run by the computer science department.</p>
+        <p>If you are on a Windows computer, the way we connect to Venus is through SSH.</p>
+        <p>Below is your Venus account username and password</p>
+        <p>Instructions on how to download and install an SSH client are below.</p>
+        <p>If you are on a Mac, you don't need to connect to Venus because everything that we do on Venus, you can do on
+            the terminal.
+        </p>
+        <p>However, if you want to connect to venus through the terminal, you can do so by typing:
+        </p>
+        <pre><code class="language-bash">
+                $ ssh username@venus.cs.qc.cuny.edu
+        </code></pre>
+        <p>replace <em>username</em> with your username. You will then be prompted to enter your password. To exit the session,
+            type <strong>exit</strong></p>
+        <p>The terminal is located in your Applications/Utilities folder. If this is your first time opening the terminal,
+            you will get a pop-up asking to install Command Line Developer Tools. Click on <strong>Install</strong>. No need
+            to click on <strong>Get Xcode</strong> because you do not need it for this class. (However, you should get it
+            for future use).
+        </p>
+        <h3>Username</h3>
+        <ul>
+            <li>First 2 letters of last name followed by</li>
+            <li>First 2 letters of first name followed by</li>
+            <li>Last 4 digits of CUNYFirst ID</li>
+        </ul>
+        <h3>Password</h3>
+        <ul>
+            <li>8 digits of CUNYFirst ID</li>
+        </ul>
+        <h4>
+            <strong>Example</strong>
+        </h4>
+        <p>My username is kaja4200. My password is my 8 digit CUNYFirst ID</p>
+        <h3>You can use this account in two places: </h3>
+        <ul>
+            <li>Computers in the computer lab</li>
+            <li>Venus server (<em>venus.cs.qc.cuny.edu</em>)</li>
+        </ul>
+
+
+        <h2>Setup Instructions</h2>
+        <h3>Windows</h3>
+        <p><strong>Login onto Venus</strong></p>
+        <ol>
+            <li>Download and install <a href="http://venus.cs.qc.cuny.edu/~csakai/assets/etc/cs_111/SSHSecureShellClient.exe">SSH</a></li>
+            <li>Click Quick Connect</li>
+            <li>In the field <em>Host Name</em> enter <mark>venus.cs.qc.cuny.edu</mark></li>
+            <li>In the field <em>User Name</em> enter your username as described above</li>
+            <li>Click Connect. You will then be prompted to enter your password, which is your CUNYFirst ID</li>
+        </ol>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>

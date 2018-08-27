@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS111</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" style="text-align: center">CS111</h1>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-light justify-content-center" style="background-color:#E3F2FD">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/syllabus.html">Syllabus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/assignments.html">Assignments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/notes.html">Notes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Other Stuff</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="padding-left:10%">
+
+        <h1>Unix Commands</h1>
+        <p>Venus runs the operating system Unix.</p>
+        <p>Below are some basic Unix Commands for navigating the directory structure, creating and deleting directories,
+            creating and deleting files, as well as a few others.</p>
+        <p>A <strong>Directory</strong> is just another term for a <em>folder</em> in Windows or Mac. It is a way to group
+            files and other directories in a heirarchichal structure.</p>
+        <p>At any given time you are <em>in</em> some directory.</p>
+        <p>When you fist log on to Venus, you will be located at the <strong>root directory</strong> or <strong>home directory</strong>,
+            which is the directory at the highest level in the heirarchy</p>
+        <p>The directory you are currently in is called the <strong>current directory</strong>.</p>
+        <p>The directory that contains your current directory is called the <strong>parent directory</strong>.</p>
+
+        <br>
+        <br>
+        <table class="table">
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>ls</strong></td>
+                <td>Lists all the files and folders in the current directory</td>
+            </tr>
+            <tr>
+                <td><strong>cd</strong> <em>directoryName</em></td>
+                <td>Changes the current directory to the directory specified by <em>directoryName</em></td>
+            </tr>
+            <tr>
+                <td><strong>cd ~</strong></td>
+                <td>Changes the curent directory to the home or root directory</td>
+            </tr>
+            <tr>
+                <td><strong>mkdir</strong> <em>directoryName</em></td>
+                <td>Creates a directory with the name <em>directoryName</em></td>
+            </tr>
+            <tr>
+                <td><strong>rmdir</strong> <em>directoryName</em></td>
+                <td>Deletes the directory with the name <em>directoryName</em>. <br>Note, you cannot delete a directory that
+                    is not empty.</td>
+            </tr>
+            <tr>
+                <td><strong>pwd</strong></td>
+                <td>Prints the full pathname of the current directory</td>
+            </tr>
+            <tr>
+                <td><strong>touch</strong> <em>fileName</em></td>
+                <td>Creates an empty file with the name <em>fileName</em></td>
+            </tr>
+            <tr>
+                <td><strong>mv</strong> <em>oldFileName</em> <em>newFileName</em></td>
+                <td>moves or renames a file. For example, <mark>mv oldFileName newFileName</mark> <br>renames the file <em>file1</em>
+                    to <em>file2</em>.</td>
+            </tr>
+            <tr>
+                <td><strong>cp</strong> <em>oldFileName</em> <em>newFileName</em></td>
+                <td>Creates a copy of a file. For example, <mark>cp oldFileName newFileName</mark> <br>renames the file <em>file1</em>
+                    to <em>file2</em>.</td>
+            </tr>
+        </table>
+
+        <br>
+        <p>In addition, </p>
+        <p><strong>.</strong> represents the current directory in which you are located</p>
+        <p><strong>..</strong> represents the parent directory (the directory above the current directory)</p>
+        <p>For example, <mark>cd ..</mark> will change the current directory to the parent directory.</p>
+    
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>

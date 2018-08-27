@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>CS 111 Lab</title>
+    <title>CS111</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1>CS 111 Lab</h1>
+            <h1 class="display-4" style="text-align: center">CS111</h1>
         </div>
     </div>
 
-    <div class="container">
-        <h2>C++ Resources</h2>
-        <ul>
-            <li><a href="https://www.codesdope.com/cpp-introduction/">www.codesdope.com</a></li>
-            <li><a href="http://www.learncpp.com/">www.learncpp.com</a></li>
-            <li><a href="http://www.cplusplus.com/doc/tutorial/">www.cplusplus.com</a></li>
+    <nav class="navbar navbar-light justify-content-center" style="background-color:#E3F2FD">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/syllabus.html">Syllabus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/assignments.html">Assignments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/notes.html">Notes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Other Stuff</a>
+            </li>
         </ul>
-        <p>If you want to code on your home computer, but don't want to do it on Venus, 
-            I recommend using <a href="https://www.visualstudio.com/vs/community/">Visual Studio Community</a>.</p>
+    </nav>
 
-        <h2>Lab Instructor</h2>
+    <div class="container" style="padding-left:10%">
+        <h2>Instructor</h2>
         <p>Welcome! My name is James Kaczmarczyk (Pronounced kaz-mar-zik)</p>
         <p>You can reach me at james.kaczmarczyk00@qmail.cuny.edu</p>
 
-        <h2>Grading Policy</h2>
-        <p>Lab counts as 20% of you total grade</p>
+        <h2>C++ Resources</h2>
         <ul>
-            <li>Quizzes count as 14%</li>
-            <li>Assignments count as 6%</li>
+            <li><a href="http://www.cplusplus.com/doc/tutorial/">www.cplusplus.com</a></li>
+            <li><a href="https://www.codesdope.com/cpp-introduction/">www.codesdope.com</a></li>
+            <li><a href="http://www.learncpp.com/">www.learncpp.com</a></li>
         </ul>
-        <p>Your lowest quiz and lowest assignment will be dropped before calculating your final grade</p>
 
-        <h2>Time and Location</h2>
+        <h2>Class Sections</h2>
         <table class="table">
             <tr>
                 <th>Class Code</th>
@@ -47,209 +59,47 @@
                 <th>Room</th>
             </tr>
             <tr>
-                <td>23007</td>
+                <td>53252</td>
                 <td>Tue Thur</td>
-                <td>2:45 - 3:35</td>
-                <td>SB A135H</td>
+                <td>12:15 - 1:05</td>
+                <td>Science A223</td>
             </tr>
             <tr>
-                <td>23008</td>
+                <td>67159</td>
                 <td>Tue Thur</td>
-                <td>3:50 - 4:40</td>
-                <td>SB A135H</td>
+                <td>2:45 - 3:35</td>
+                <td>Science A103</td>
             </tr>
         </table>
 
-        <h2>Submitting Assignments</h2>
-        <p>To submit assignments, you must email me a zipped folder named <mark>LASTNAME_FIRSTNAME_HW#</mark> containing your .cpp files.</p>
-        <p>Each .cpp file must be named <mark>LASTNAME_FIRSTNAME_QUESTION#</mark></p>
-        <p>The subject line of your email must be <mark>LASTNAME FIRSTNAME HW#</mark></p>
-        <p>Each question of the assignment must be completed as a standalone .cpp file.</p>
-        <p><strong>For example</strong>, suppose I am submitting assignment 2, which contains 3 questions.</p>
-        <p>I would email a zipped folder named <mark>KACZMARCZYK_JAMES_HW2</mark> containing three files:</p>
-        <ul>
-            <li><mark>KACZMARCZYK_JAMES_1.cpp</mark></li>
-            <li><mark>KACZMARCZYK_JAMES_2.cpp</mark></li>
-            <li><mark>KACZMARCZYK_JAMES_3.cpp</mark></li>
-        </ul>
-        <p>The subject line of my email would be <mark>KACZMARCZYK JAMES 2</mark></p>
-
-        <h2>Lab Schedule</h2>
-        <h3>Tuesday 1/30</h3>
-        <ul>
-            <li>Lecture: <a href="/introduction.html">Introduction</a></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 2/1</h3>
-        <ul>
-            <li>Lecture: <a href="/lecture1.html">Output</a></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Tuesday 2/6</h3>
-        <ul>
-            <li>Lecture: <a href="/lecture2.html">Variables, Input, Arithmetic</a></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 2/8</h3>
-        <ul>
-            <li>Lecture: <a href="/problems/problemset1/problemset1.html">Problem Set 1</a></li>
-            <li>Quiz: <strong>Quiz 1</strong></li>
-            <li>Homework: <a href="/assignments/assignment1.html">Assignmnent 1</a></li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Tuesday 2/13</h3>
-        <ul>
-            <li>Lecture: <strong>Review</strong></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 2/15</h3>
-        <ul>
-            <li>Lecture: <a href="/problems/problemset2/problemset2.html">Problem Set 2</a>
-            <p><a href="http://venus.cs.qc.cuny.edu/~mfried/cs111/prac1.pdf">midterm practice problems</a></p></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 2/22</h3>
-        <ul>
-            <li>Lecture: <a href="http://venus.cs.qc.cuny.edu/~mfried/cs111/prac1.pdf">midterm practice problems 3, 45, 79, 1, 5, 24, 31</a></li>
-            <li>Quiz: <strong>Quiz 2</strong></li>
-            <li>Homework: <a href="/assignments/assignment2.html">Assignment 2</a></li>
-            <li>Homework due: <strong>Assignment 1</strong></li>
-        </ul>
-
-        <h3>Tuesday 2/27</h3>
-        <ul>
-            <li>Lecture: <strong>Continue working on practice problems</strong></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 3/01</h3>
-        <ul>
-            <li>Lecture: <strong>Practice Problems: 4, 10, 14, 42, 69, 76, 96, 121, 148, 160, 164, 211.  Nested Loops: 2, 5, 6</strong>
-                <p>
-                    <a href="/patterns.html">Examples</a>
-                </p>
-            </li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Tuesday 3/06</h3>
-        <ul>
-            <li>Lecture: <strong>Continue working on practice problems</strong></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 3/08</h3>
-        <ul>
-            <li>Lecture: <a href="http://venus.cs.qc.edu/~ryba/cs111/prac1.pdf">Work on new set of practice problems</a></li>
-            <li>Quiz: <strong>Quiz 3</strong></li>
-            <li>Homework: </li>
-            <li>Homework due: <strong>Assignment 2</strong></li>
-        </ul>
-
-        <h3>Tuesday 3/13</h3>
-        <ul>
-            <li>Lecture: <strong>Continue working on practice problems</strong></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 3/15</h3>
-        <ul>
-            <li>Lecture: <strong>Functions basics</strong></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Tuesday 3/20</h3>
-        <ul>
-            <li>Lecture: </li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 3/22</h3>
-        <ul>
-            <li>Lecture: </li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Tuesday 3/27</h3>
-        <ul>
-            <li>Lecture: </li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 3/29</h3>
-        <ul>
-            <li>Lecture: </li>
-            <li>Quiz: <strong>Quiz 4 (functions)</strong></li>
-            <li>Homework: <a href="/assignments/assignment3.html">Assignment 3</a></li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Tuesday 4/10</h3>
-        <ul>
-            <li>Lecture: </li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 4/12</h3>
-        <ul>
-            <li>Lecture: <a href="http://venus.cs.qc.cuny.edu/~mfried/cs111/prac2.pdf">Practice Problems</a>
-                <p>Function pass by value and pass by reference: 3, 9, 28abce, 46, 62, 149abcd</p>
-            </li>
-            <li>Quiz: </li>
-            <li>Homework:</li>
-            <li>Homework due: </li>
-        </ul>
-        <h3>Tuesday 4/24</h3>
-        <ul>
-            <li>Lecture: <strong>Quiz 5 (recursion)</strong></li>
-            <li>Quiz: </li>
-            <li>Homework: </li>
-            <li>Homework due: </li>
-        </ul>
-
-        <h3>Thursday 4/26</h3>
-        <ul>
-            <li>Lecture: </li>
-            <li>Quiz: </li>
-            <li>Homework:</li>
-            <li>Homework due: </li>
-        </ul>
-
+        <h2>Course Materials</h2>
+        <table class="table">
+            <tr>
+                <th>Date</th>
+                <th>Notes</th>
+                <th>Assignments</th>
+                <th>Quizzes</th>
+                <th>Assignments Due</th>
+            </tr>
+            <tr>
+                <td>8/21</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
 </body>
+
 </html>
