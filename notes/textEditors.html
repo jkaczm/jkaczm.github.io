@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS111</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" style="text-align: center">CS111</h1>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-light justify-content-center" style="background-color:#E3F2FD">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/syllabus.html">Syllabus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/assignments.html">Assignments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/notes.html">Notes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Other Stuff</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="padding-left:10%">
+
+        <h1>Text Editors</h1>
+        <p>To edit a file we need to use a text editor. Notepad is an example of a text editor on a Windows machine.</p>
+
+        <h1>GUI Based Text Editor</h1>
+        <p>There are other GUI based text editors. Some well known free ones are:</p>
+        <ul>
+            <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+            <li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+            <li><a href="https://atom.io/">Atom</a></li>
+            <li><a href="https://macromates.com/">Textmate</a></li>
+        </ul>
+        <p>(I like Visual Studio Code)</p>
+
+        <h1>Terminal Based Text Editor</h1>
+        <p>The Unix operating system comes with default non GUI text editors such as <em>Vi</em>, <em>Pico</em>, <em>Nano</em>,
+            or <em>Emacs</em>. When a GUI based text editor is not available in your system, you can always use one of these
+            editors. This section is dedicated to Pico/Nano and Vi.
+        </p>
+
+        <h2>Pico/Nano (EASY)</h2>
+        <ul>
+            <li>Command to launch Pico/Nano: <strong>pico</strong> or <strong>nano</strong></li>
+            <li>To open a file called <em>my_source_code.cpp</em>: <strong>nano my_source_code.cpp</strong></li>
+            <li>To save file: <strong>Ctrl+o</strong> then press <strong>enter</strong>. 
+                <br>
+                After you press <strong>Ctrl+o</strong>
+                you are prompted to enter the name of the file you want to save.  Press <strong>Enter</strong> once you are satisfied.</li>
+            <li>to quit: <strong>Ctrl+x</strong></li>
+        </ul>
+        <p>(note: ctrl+o means you hold down the control key and press o)</p>
+        <p>Also, when you are editing text, you cannot move the cursor to a new location by clicking with your mouse, you must use the arrow keys on
+            the keyboard to navigate.</p>
+
+        <h2>Vi (HARD)</h2>
+        <p>This is how to use Vi at the most basic level. Vi is not intended to be used like this. To use Vi correctly, you'll
+            need to invest way more time due to the very high learning curve.
+        </p>
+        <ul>
+            <li>Open a file <em>my_source_code.cpp</em> in Vi: <strong>vi my_source_code.cpp</strong></li>
+            <li>Vi has 2 modes:
+                <ul>
+                    <li><em>Visual Mode</em> (for navigation)
+                        <p>By default, when you open Vi, you are in Visual Mode.</p>
+                        <p>In Visual Mode, you cannot type your text. However, you can navigate using your regular arrow
+                            keys on the keyboard. Once you are in the position where you want to insert text, press "i" to
+                            go to Insert Mode.
+                        </p>
+                    </li>
+                    <li><em>Insert Mode</em> (for editing)
+                        <p>In insert Mode, you can type to enter your text. Once you finish entering your text, press "Esc"
+                            key to go back into Visual Mode.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>Save a file in Vi: In Visual Mode, press <em>:w</em></li>
+            <li>Quit Vi: In Visual Mode, press <em>:q</em></li>
+        </ul>
+        <p>Again, this workflow above is not how you use Vi. If you have more time and are willing to be proficient in Vi,
+            this is where you can <a href="http://www.openvim.com/">start</a>. Learning to use Vi the proper way is a rewarding
+            investment.
+        </p>
+
+        <h1>Edit, Compile and Execute Code</h1>
+        <h2>Edit</h2>
+        <p>Create an empty file called <mark>hello.cpp</mark> by typing</p>
+        <pre><code class="language-bash">
+            $ touch hello.cpp
+            </code></pre>
+        <p>Open <mark>hello.cpp</mark> using pico by typing</p>
+        <pre><code class="language-bash">
+            $ pico hello.cpp
+            </code></pre>
+        <p>Type this in</p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                cout << "Hello world";
+                cout << endl;
+                return 0;
+            }
+            </code></pre>
+        <p>Save the file by pressing <em>Ctrl+o</em> and then <em>Enter</em></p>
+        <p>Quit by pressing <em>Ctrl+x</em></p>
+
+        <br>
+        <p>What we have just done is created an empty file named <em>hello.cpp</em> by entering the command <mark>touch hello.cpp</mark></p>
+        <p>We opened the (empty) file using the text editor Pico by entering the command <mark>pico hello.cpp</mark></p>
+        <p>We then typed in the source code of our "Hello World" program, saved the file, and then exited the text editor</p>
+
+        <h2>Compile</h2>
+        <p>To compile, execute this command</p>
+        <pre><code class="language-bash">
+            $ g++ hello.cpp
+            </code></pre>
+        <p>Check if a file named <em>a.out</em> had been created by executing the command <strong>ls</strong></p>
+
+        <h2>Execute</h2>
+        <p>Run your newly compiled program by typing</p>
+        <pre><code class="language-bash">
+            $ ./a.out
+            </code></pre>
+        <p>If it is successful, it will print "Hello, World!"</p>
+
+        <h1>Output Statements</h1>
+        <pre><code class="language-cpp">
+            cout << "Hello";
+            </code></pre>
+        <p>When this C++ statement is executed, whatever is to the right of <mark><<</mark> is printed to the console (terminal).
+        </p>
+        <p>You can use chaining to print multiple literals and variables with a single statement. For example, the following statement</p>
+        <pre><code class="language-cpp">
+            cout << "Hello."  << "  My name is James";
+            </code></pre>
+        <p>Prints "Hello. My name is James" to the console on one line</p>
+        <p>The above statement does the same thing as the following</p>
+        <pre><code class="language-cpp">
+            cout << "Hello.";  
+            cout << "  My name is James";
+            </code></pre>
+        <p>Finally, you can delete the two files we just created by entering the statements <strong>rm a.out</strong> and <strong>rm hello.cpp</strong></p>
+
+
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>
