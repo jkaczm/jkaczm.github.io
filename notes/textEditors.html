@@ -63,15 +63,16 @@
         <ul>
             <li>Command to launch Pico/Nano: <strong>pico</strong> or <strong>nano</strong></li>
             <li>To open a file called <em>my_source_code.cpp</em>: <strong>nano my_source_code.cpp</strong></li>
-            <li>To save file: <strong>Ctrl+o</strong> then press <strong>enter</strong>. 
-                <br>
-                After you press <strong>Ctrl+o</strong>
-                you are prompted to enter the name of the file you want to save.  Press <strong>Enter</strong> once you are satisfied.</li>
+            <li>To save file: <strong>Ctrl+o</strong> then press <strong>enter</strong>.
+                <br> After you press <strong>Ctrl+o</strong>
+                you are prompted to enter the name of the file you want to save. Press <strong>Enter</strong> once you are
+                satisfied.
+            </li>
             <li>to quit: <strong>Ctrl+x</strong></li>
         </ul>
         <p>(note: ctrl+o means you hold down the control key and press o)</p>
-        <p>Also, when you are editing text, you cannot move the cursor to a new location by clicking with your mouse, you must use the arrow keys on
-            the keyboard to navigate.</p>
+        <p>Also, when you are editing text, you cannot move the cursor to a new location by clicking with your mouse, you
+            must use the arrow keys on the keyboard to navigate.</p>
 
         <h2>Vi (HARD)</h2>
         <p>This is how to use Vi at the most basic level. Vi is not intended to be used like this. To use Vi correctly, you'll
@@ -147,13 +148,30 @@
             </code></pre>
         <p>If it is successful, it will print "Hello, World!"</p>
 
+        <br>
+        <p>FYI, the default file name for the compiled program is <mark>a.out</mark></p>
+        <p>If you want the compiled program to save to a different name, add a <mark>-o</mark> flag to the
+            <mark>g++</mark> command and include the file name you want to save the compiled program as.</p>
+        <p>For example, the following command would compile the program <em>HelloWorld.cpp</em> and save the compiled program
+            as <em>Hello</em></p>
+        <pre><code class="language-bash">
+            $ g++ HelloWorld.cpp -o Hello
+            </code></pre>
+        <p>You would then run the program by executing the command</p>
+        <pre><code class="language-bash">
+            $ ./Hello
+            </code></pre>
+        <br>
+
         <h1>Output Statements</h1>
         <pre><code class="language-cpp">
             cout << "Hello";
             </code></pre>
         <p>When this C++ statement is executed, whatever is to the right of <mark><<</mark> is printed to the console (terminal).
         </p>
-        <p>You can use chaining to print multiple literals and variables with a single statement. For example, the following statement</p>
+        <p>You can use chaining to print multiple literals and variables with a single statement. For example, the following
+            statement
+        </p>
         <pre><code class="language-cpp">
             cout << "Hello."  << "  My name is James";
             </code></pre>
@@ -163,7 +181,8 @@
             cout << "Hello.";  
             cout << "  My name is James";
             </code></pre>
-        <p>Finally, you can delete the two files we just created by entering the statements <strong>rm a.out</strong> and <strong>rm hello.cpp</strong></p>
+        <p>Finally, you can delete the two files we just created by entering the statements <strong>rm a.out</strong> and
+            <strong>rm hello.cpp</strong></p>
 
 
         <br>
