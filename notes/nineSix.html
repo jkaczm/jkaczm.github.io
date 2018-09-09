@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS111</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" style="text-align: center">CS111</h1>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-light justify-content-center" style="background-color:#E3F2FD">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/syllabus.html">Syllabus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/assignments.html">Assignments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/notes.html">Notes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Other Stuff</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="padding-left:10%">
+
+        <p><strong>Problem statement:</strong> Write a program that prompts the user enters two integer valued numbers
+            a and b, and prints the result.</p>
+        <p><strong>Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                int a;
+                int b;
+
+                cout << "What is the value of a? ";
+                cin >> a;
+                cout << "What is the value of b? ";
+                cin >> b;
+
+                cout << "The sum of a and b is " << a + b;
+                cout << endl;
+
+                return 0;
+            }
+        </code></pre>
+
+
+        <p>Note, You can use one <mark>cin</mark> statement to receive input to the user. For example, the above
+            program can be written as follows.</p>
+        <p><strong>Alternative Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                int a;
+                int b;
+
+                cout << "What are the values of a and b? ";
+                cin >> a >> b;
+
+                cout << "The sum of a and b is " << a + b;
+                cout << endl;
+
+                return 0;
+            }
+        </code></pre>
+        <p>In the above program, the user can enter the values of a and b on one line with a space separating them. Or
+            the user can type the value of a, hit enter, and then type the value of b and hit enter again.</p>
+        <p>Experiment on your own to see how exactly input is received from the user.</p>
+
+
+        <p><strong>Problem statement:</strong> Write a program that prompts the user to enters his or her name and
+            major, and prints the
+            statement, "Hello, <mark>name</mark>. Your major is <mark>major</mark>.". (Note, when you enter data, don't
+            include any spaces,
+            otherwise, only the first word entered will be stored in the variable).</p>
+        <p><strong>Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                string name;
+                string major;
+
+                cout << "What is your name? ";
+                cin >> name;
+                cout << "What is your major? ";
+                cin >> major;
+
+                cout << "Hello, " << name << ". Your major is " << major << "." << endl;
+
+                return 0;
+            }
+        </code></pre>
+
+        <p><strong>Problem statement:</strong> Write a program that prompts the user to enter the lengths of the base
+            and height of a triangle, and prints the area to the screen. (The base and height variables should be of
+            type int)</p>
+        <p><strong>Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                int base;
+                int height;
+
+                cout << "What is the length of the base? ";
+                cin >> base;
+                cout << "What is the length of the height? ";
+                cin >> height;
+
+                cout << "The area of the triangle is " << .5 * base * height << endl;
+
+
+                return 0;
+            }
+        </code></pre>
+
+        <p><strong>Problem statement:</strong> Write a program that prompts the user to enter his your her height in
+            inches, and prints the user's height in feet and inches to the screen. For example, if the user enters 68.
+            The program will output "5 foot 8 inches".</p>
+        <p><strong>Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                int height;
+
+                cout << "How tall are you in inches? ";
+                cin >> height;
+
+                cout << "You are " << height / 12 << " foot " << height % 12 << " inches" << endl;
+
+                return 0;
+            }
+        </code></pre>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>
