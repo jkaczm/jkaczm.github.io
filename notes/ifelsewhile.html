@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS111</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/prism.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" style="text-align: center">CS111</h1>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-light justify-content-center" style="background-color:#E3F2FD">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/syllabus.html">Syllabus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/assignments.html">Assignments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/notes.html">Notes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Other Stuff</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="padding-left:10%">
+
+        <p><strong>Problem statement:</strong> Write a program in that prompts the user to enter an integer n, and
+            prints the numbers from one to n. (1,2,3,...,n)</p>
+        <p><strong>Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                int n;
+                cout << "Enter a value for n: ";
+                cin >> n;
+
+                int count = 1;
+
+                while (count <= n){
+                    cout << count << " ";
+                    count++;
+                }
+
+                cout << endl;
+
+                return 0;
+            }
+        </code></pre>
+
+        <p><strong>Problem statement:</strong> modify the above program to print the sum of the numbers from one to n.</p>
+        <p><strong>Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                int n;
+                cout << "Enter a value for n: ";
+                cin >> n;
+
+                int count = 1;
+                int sum = 0;
+
+                while (count <= n){
+                    sum = sum + count;
+                    count++;
+                }
+
+                cout << "The sum from 1 to " << n << " is " << sum << endl;
+
+                return 0;
+            }
+        </code></pre>
+
+        <p><strong>Problem statement:</strong>Write a program in which the user is prompted to enter a number n, and
+            the program prints all the even numbers from one to n. </p>
+        <p><strong>Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                int n;
+                cout << "Enter a value for n: ";
+                cin >> n;
+
+                int count = 2;
+
+                while (count <= n){
+                    cout << count << " ";
+                    count = count + 2;
+                }
+
+                cout << endl;
+
+                return 0;
+            }
+        </code></pre>
+
+
+        <p><strong>Problem statement:</strong>Write a program in which the user is prompted to enter a number n, and
+            the program prints all the <strong>divisors</strong> of n.</p>
+        <p><strong>Solution:</strong></p>
+        <pre><code class="language-cpp">
+            #include&ltiostream&gt;
+    
+            using namespace std;
+    
+            int main(){
+                int n;
+                cout << "Enter a value for n: ";
+                cin >> n;
+
+                int x = 1;
+
+                while (x <= n){
+                    if(n % x == 0){
+                        cout << x << " ";
+                    }
+                    x++;
+                }
+
+                cout << endl;
+
+                return 0;
+            }
+        </code></pre>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>
